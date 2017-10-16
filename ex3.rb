@@ -19,3 +19,5 @@ puts "How about some more."
 puts "Is it greater? #{5 > -2}"
 puts "Is it greater or equal? #{5 >= -2}"
 puts "Is it less or equal? #{5 <= -2}"
+
+puts "Testing my new skills #{5+10}"
