@@ -7,12 +7,15 @@
 filename = ARGV.first
 #Opening File
 txt = open(filename)
-
+#outputs filename 
 puts "Here's your file #{filename}"
-print txt.read 
+puts txt.read 
+txt.seek(0)
+puts txt.readline
 
 print "Type the filename again: "
 puts "> "
 file_again = $stdin.gets.chomp
 txt_again = open(file_again)
 puts txt_again.read
+
