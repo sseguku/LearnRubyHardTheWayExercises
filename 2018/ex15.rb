@@ -19,3 +19,12 @@ file_again = $stdin.gets.chomp
 txt_again = open(file_again)
 puts txt_again.read
 
+=begin
+Best to Remember is a CD player
+
+read
+readline
+write('stuff')
+seek(0)
+truncate - empties
+=end

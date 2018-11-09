@@ -1,3 +1,4 @@
+#ARGV helps the user to give input at the begging of the program
 first, second, third = ARGV
 
 puts "Your first variable is: #{first}"
