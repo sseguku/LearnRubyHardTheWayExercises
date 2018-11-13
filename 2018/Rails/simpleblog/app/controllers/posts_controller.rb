@@ -3,16 +3,20 @@ class PostsController < ApplicationController
         @posts = Post.all
     end
 
+    #shows a post
     def show 
         @post = Post.find(params[:id])
     end
+    #shows new post
     def new
         @post = Post.new
     end
+    #edits a post
     def edit
         @post = Post.find(params[:id])
     end
 
+    #updates a blog
     def update
         @post = Post.find(params[:id])
 
@@ -23,7 +27,7 @@ class PostsController < ApplicationController
         end
     end
 
-    #create method
+    #creates a blog
     def create
 
         #shows based submited data in post form
@@ -34,6 +38,15 @@ class PostsController < ApplicationController
         else
            render 'new' 
         end
+    end
+
+    #deletes and destroys a post
+    def destroy
+        @post  = Post.find(params[:id])
+        @post.destroy
+        
+        redirect_to posts_path
+        
     end
 
     private def post_params
